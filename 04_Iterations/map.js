@@ -1,11 +1,8 @@
-const myMap = new Map()
+myArr = [1,2,3,4,5,6,7,8,9,10]
 
-myMap.set(+91,'India')
-myMap.set('+234','Nigeria')
+//sqArr = myArr.map((nums)=>nums**2)
 
-console.log(myMap);
+// ++++++++++++++++++++++++++====     Chaining 
 
-for (const [key,value] of myMap) {
-    console.log(key,value);
-    
-}
+sqArr = myArr.map((nums)=> nums*10).map((nums)=> nums+3).filter((nums)=> nums%3==0)
+console.log(sqArr);
