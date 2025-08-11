@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      DOM
+    </title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="sec-button">Second Button</button>
+
+    <script>
+      console.log(document.querySelector('button').innerHTML);
+
+      document.querySelector('button').innerHTML='Click Me DOM'
+
+      const buttonElement=(document.querySelector('.sec-button'));
+      console.log(buttonElement)
+
+
+      /*
+      console.log(document.title);
+      console.log(document.body);
+      console.log(document.body.innerHTML);
+      document.body.innerHTML='changed';
+      document.body.innerHTML="hello";
+      document.title="Good Job";
+      */
+    </script>
+  </body>
+</html>

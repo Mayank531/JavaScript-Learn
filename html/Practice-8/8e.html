@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Object Compare product
+    </title>
+  </head>
+  <body>
+    <script>
+      const basketball={
+        name:"Wilson-basketball",
+        price:2095
+      }
+      const football = {
+        name : 'Nike-Footbal',
+        price : 400
+      }
+      function isSameProduct(product1,product2){
+        if(basketball['name']===football['name'] && basketball.price===football.price){
+          return true
+        }else{
+          return false
+        }
+
+      }
+      console.log(isSameProduct(basketball,football));
+      
+    </script>
+  </body>
+</html>

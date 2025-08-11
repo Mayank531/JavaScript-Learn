@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Rock Paper Scissors
+    </title>
+  </head>
+
+  <body>
+    <p>
+      Rock Paper Scissors Game
+    </p>
+
+    <button onclick="
+      let myMove = 1
+      let compMove = Math.floor((Math.random()*100*(4-1))/100)+1;
+      if(compMove===myMove){
+        scores.ties+=1;
+        alert(`Its a tie.
+        Wins: ${scores.wins} Lose: ${scores.losses}  Ties: ${scores.ties}`)
+      }else if(compMove==2){
+        scores.losses+=1;
+        alert('You picked Rock, Computer picked Paper. So, COMP WIN')
+      }else{
+        scores.wins+=1;
+        alert(`You : Rock, Computer: Scissor 
+        picked Paper.
+        Winner : YOU`)
+      }
+
+    ">
+      Rock
+    </button>
+    <button onclick="
+     myMove = 2
+      compMove = Math.floor((Math.random()*100*(4-1))/100)+1;
+      if(compMove===myMove){
+        scores.ties+=1;
+        alert(`        You:    Paper
+        Computer: Paper
+        Winner: TIE`);
+      }else if(compMove==1){
+        scores.wins+=1;
+        alert(`        You:    Paper
+        Computer: Rock
+        Winner: You`);
+      }else{
+        scores.losses+=1;
+        alert(`        You:    Paper
+        Computer: Scissor
+        Winner: Computer`);
+      }
+    ">
+      Paper
+    </button>
+    <button onclick="
+    myMove = 3
+      compMove = Math.floor((Math.random()*100*(4-1))/100)+1;
+      if(compMove===myMove){
+        scores.ties+=1;
+        alert(`        You:    Scissor
+        Computer: Scissor
+        Winner: TIE`);
+      }else if(compMove==1){
+        scores.losses+=1;
+        alert(`        You:    Scissor
+        Computer: Rock
+        Winner: Computer`);
+      }else{
+        scores.wins+=1;
+        alert(`        You:    Scissor
+        Computer: Paper
+        Winner: YOU`);
+      }
+    ">
+      Scissor
+    </button>
+    <script>
+      scores={
+        wins:0,
+        losses:0,
+        ties:0
+      }
+    </script>
+  </body>
+</html>
