@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      If - Time Of Day
+    </title>
+  </head>
+
+  <body>
+    <button onclick="
+      let hour = Math.floor(Math.random()*24);
+      if(hour>=6 && hour<12){
+        console.log(`Good Morning ${user}`);
+      }else if(hour>=12 && hour<17){
+        console.log(`Good After Noon ${user}`);
+      }else{
+        console.log(`Good Night ${user}`);
+      }
+      ">
+      Time
+    </button>
+    <script>
+      let user = "Smith"
+    </script>
+  </body>
+</html>
