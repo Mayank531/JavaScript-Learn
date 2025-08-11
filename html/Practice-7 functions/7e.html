@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Convert From To
+    </title>
+  </head>
+  <body>
+    <script>
+
+      function convertToCelsius(fahrenheit){
+        let celsius = (fahrenheit-32)*(5/9)
+        return `${celsius} C`
+      }
+
+      function convertToFahrenheit(celsius){
+        let fahrenheit = (celsius*(9/5))+32
+        return `${fahrenheit} F`
+      }
+
+      function convertTemp(degrees,unit){
+        result = (unit=='F') ? convertToCelsius(degrees) : convertToFahrenheit(degrees)
+        return result
+      }
+
+      
+      result = convertTemp(25,'C')
+      console.log(result);
+      
+
+    </script>
+  </body>
+</html>
