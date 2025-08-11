@@ -10,25 +10,29 @@
 
     <button onclick="console.log(`Cart Quantity: ${quantity}`);
     ">Show Quantity</button>
-    <button onclick="console.log(`Cart Quantity: ${++quantity}`);
+    <button onclick="(quantity<10)?console.log(`Cart Quantity: ${++quantity}`): console.log('The Cart is full');
+    
     ">Add to Cart</button>
     <button onclick="quantity+=2;console.log(`Cart Quantity: ${quantity}`);
     ">+2</button>
     <button onclick="quantity+=3;console.log(`Cart Quantity: ${quantity}`);
-    ">+3</button>
+    ">
+      +3
+    </button>
+
     <button onclick="console.log('Cart was Reset');console.log(`Cart Quantity: ${quantity=0}`);
-    ">Reset Cart</button>
-    <button onclick="if (quantity>=1){console.log(`Cart Quantity: ${--quantity}`);}
-    else{
-      console.log(`Cart Quantity already empty`)
-    }
+    ">
+      Reset Cart
+    </button>
+
+    <button onclick="(quantity>=1) ? console.log(`Cart Quantity: ${--quantity}`) : console.log(`Not enough items in the Cart`)
     ">
       Remove from Cart
     </button>
 
     <button onclick="if (quantity>=2){quantity-=2;console.log(`Cart Quantity: ${quantity}`);}
     else{
-      console.log(`Cart Quantity is empty or cannot be minus`)
+      console.log(`Not enough items in the Cart`)
     }
     ">
       -2
@@ -36,7 +40,7 @@
 
     <button onclick="if (quantity>=3){quantity-=3;console.log(`Cart Quantity: ${quantity}`);}
     else{
-      console.log(`Cart Quantity is empty or cannot be minus`)
+      console.log(`Not enough items in the Cart`)
     }
     ">
       -3
