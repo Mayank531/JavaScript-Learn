@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+
+    <style>
+      .equal-to{
+        background-color: black;
+        color:aliceblue
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      <button onclick="
+      calculation+='1'
+      ">
+      1
+      </button>
+
+      <button onclick="calculation+='2'">
+        2
+      </button>
+
+      <button onclick="calculation+='3'">
+        3
+      </button>
+
+      <button onclick="calculation+='+'">
+        +
+      </button>
+
+    </p>
+
+    <p>
+      <button onclick="
+      calculation+='4'
+      ">
+      4
+      </button>
+
+      <button onclick="calculation+='5'">
+        5
+      </button>
+
+      <button onclick="calculation+='6'">
+        6
+      </button>
+
+      <button onclick="calculation+='-'">
+        -
+      </button>
+
+      <button  onclick="
+      calculation+='*'
+      ">
+        *
+      </button>
+    </p>
+
+    <p>
+      <button onclick="
+      calculation+='7'
+      ">
+        7
+      </button>
+
+      <button onclick="calculation+='8'">
+        8
+      </button>
+
+      <button onclick="calculation+='9'">
+        9
+      </button>
+
+      <button onclick="calculation+='/'">
+        /
+      </button>
+
+      <button  onclick="
+      calculation+='**'
+      ">
+        raised ^
+      </button>
+    </p>
+
+    <p>
+      <button onclick="calculation=0;console.log('Cleared');
+      ">
+        Clear
+      </button>
+
+      <button  onclick="
+      console.log(`Total: ${calculation=eval(calculation)}`);
+      "  class="equal-to">
+        =
+      </button>
+
+    </p>
+    
+
+    <script>
+      
+      let calculation='0';
+    </script>
+  </body>
+</html>
