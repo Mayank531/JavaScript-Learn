@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Restaurant 
+    </title>
+  </head>
+
+  <body>
+
+    <button onclick="console.log(`Coffee Cups: ${++coffeCups}`);
+    ">Coffe </button>
+
+    <button onclick="console.log(`Bagels: ${++bagelsNo}`);
+    ">Bagels</button>
+
+    <button onclick="console.log(`Soup Bowls: ${++soupBowls}`);
+    ">Soup</button>
+    
+    <button onclick="console.log('Order was Reset');coffeCups=0;bagelsNo=0;soupBowls=0;
+    ">Reset Order</button>
+
+    <button onclick="
+    totalBill = ((coffeCups*coffePrice)+(bagelsNo*bagelPrice)+(soupBowls*soupPrice))+(0.1*((coffeCups*coffePrice)+(bagelsNo*bagelPrice)+(soupBowls*soupPrice)));
+    console.log(`Total Bill: $ ${totalBill}`);
+    
+    ">
+      Calculate
+    </button>
+
+    <script>
+      let coffeCups = 0
+      let bagelsNo = 0
+      let soupBowls = 0
+      const coffePrice = 5
+      const bagelPrice = 3
+      const soupPrice = 9
+      let totalBill = 0;
+      //console.log(quantity);
+      
+    </script>
+    
+  </body>
+</html>
